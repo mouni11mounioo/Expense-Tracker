@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker</title>
+<link rel="stylesheet" href="Expense Tracker.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+    
+        <!-- Expense Input Form Section -->
+        <div class="section">
+            <h2>Expense Input Form</h2>
+            <div class="container">
+                <form id="expenseForm">
+                    <label for="expenseDate">Date:</label>
+                    <input type="Date" id="expenseDate" name="expenseDate" required>
+                    
+                    <label for="expenseAmount">Amount:</label>
+                    <input type="number" id="expenseAmount" name="expenseAmount" required>
+                    
+                    <label for="expenseCategory">Category:</label>
+                    <input type="text" id="expenseCategory" name="expenseCategory" required>
+                    
+                    <label for="expenseDescription">Description:</label>
+                    <textarea id="expenseDescription" name="expenseDescription" rows="4" required></textarea>
+                    
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Expense List Display Section -->
+        <div class="section">
+            <h2>Expense List Display</h2>
+            <ul class="expense-list">
+                <li class="expense-item">
+                    <input type="checkbox" id="expense1" name="expense1">
+                    <label for="expense1">
+                        <span class="expense-name">Groceries:</span> $48
+                    </label>
+                </li>
+                <li class="expense-item">
+                    <input type="checkbox" id="expense2" name="expense2">
+                    <label for="expense2">
+                        <span class="expense-name">Dinner:</span> $60
+                    </label>
+                </li>
+                <li class="expense-item">
+                    <input type="checkbox" id="expense3" name="expense3">
+                    <label for="expense3">
+                        <span class="expense-name">Movie tickets:</span> $85
+                    </label>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- Expense Summary Section -->
+        <div class="section">
+            <h2>Expense Summary</h2>
+            <div id="expenseSummary">
+                Total Expenses: <span id="totalExpenses">$0.00</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
